@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Ya Hsiu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Karla:wght@300;400;500;700&family=Nunito+Sans:wght@300;400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/fonts.css" />
+<link rel="stylesheet" href="assets/css/base.css" />
+<link rel="stylesheet" href="assets/css/contact.css" />
+<script src="assets/site.js"></script>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">YA HSIU</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="contact-hero">
+    <div class="wrap">
+      <span class="eyebrow reveal">Contact</span>
+      <h1 class="contact-title reveal" data-d="1">Let&rsquo;s make something great together.</h1>
+      <p class="contact-sub reveal" data-d="2">無論是產品合作、AI × UX 工作坊邀約，或只是想聊聊產品與設計 — 都歡迎留言給我，我通常會在 1–2 個工作天內回覆。</p>
+    </div>
+  </section>
+
+  <!-- ============ INFO + FORM ============ -->
+  <section class="contact-sec">
+    <div class="wrap">
+      <div class="contact-grid">
+
+        <!-- left: info -->
+        <div class="contact-info reveal">
+          <div class="info-item">
+            <div class="k">Email</div>
+            <a class="v" href="mailto:yahsiu20419@gmail.com">yahsiu20419@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <div class="k">Location</div>
+            <div class="v">Taiwan</div>
+          </div>
+          <div class="info-item">
+            <div class="k">Open to</div>
+            <div class="v">AI 產品經理 · UX · 產品經理<br />全職 / 接案 / 顧問</div>
+          </div>
+          <div class="info-item">
+            <div class="k">Response</div>
+            <div class="v">通常 1–2 個工作天內回覆</div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/yahsiu-hsu" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+    
+          </div>
+        </div>
+
+        <!-- right: form -->
+        <form class="contact-form reveal" data-d="1" data-to="yahsiu20419@gmail.com" novalidate>
+          <div class="form-fields">
+            <div class="form-row">
+              <div class="field">
+                <label for="cf-name">姓名 <span class="req">*</span></label>
+                <input id="cf-name" name="name" type="text" required placeholder="你的名字" />
+                <div class="field-error">請填寫你的名字</div>
+              </div>
+              <div class="field">
+                <label for="cf-email">Email <span class="req">*</span></label>
+                <input id="cf-email" name="email" type="email" required placeholder="you@example.com" />
+                <div class="field-error">請填寫有效的 Email</div>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cf-subject">主旨</label>
+              <input id="cf-subject" name="subject" type="text" placeholder="想聊的主題（選填）" />
+              <div class="field-error">&nbsp;</div>
+            </div>
+            <div class="field">
+              <label for="cf-message">訊息 <span class="req">*</span></label>
+              <textarea id="cf-message" name="message" required placeholder="想合作的內容、邀約或任何想法…"></textarea>
+              <div class="field-error">請寫下你想說的內容</div>
+            </div>
+            <div class="form-foot">
+              <span class="form-note">送出後會開啟你的郵件程式，內容已為你帶入。</span>
+              <button type="submit" class="btn-submit">送出訊息 <span class="arrow">&rarr;</span></button>
+            </div>
+          </div>
+
+          <div class="form-success">
+            <div class="check">&#10003;</div>
+            <h3>訊息已準備好<span data-success-name></span>！</h3>
+            <p>感謝你的來信 — 我已為你開啟郵件程式，送出後我會盡快回覆。期待與你聊聊！</p>
+            <a href="index.html" class="btn btn-ghost">回到首頁</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <nav class="footer-nav">
+        <a href="index.html" class="home">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-main">
+        <div class="footer-top">
+          <div class="footer-id">
+            <div class="name">Ya-Hsiu</div>
+            <div class="role">AI · Product Manager · UX</div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/yahsiu-hsu" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-row">
+            <span class="fb-mail">yahsiu20419@gmail.com</span>
+            <span>Taiwan</span>
+          </div>
+          <div class="footer-bottom-row footer-meta-row">
+            <span>&copy; 2026, YA-HSIU HSU</span>
+            <span>ALL RIGHTS RESERVED.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ TWEAKS (lazy-loaded by site.js on idle) ============ -->
+<div id="tweaks-root"></div>
+
+</body>
+</html>
