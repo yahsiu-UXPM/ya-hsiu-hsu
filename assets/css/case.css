@@ -34,6 +34,16 @@
 
 .case .pill-row { justify-content: center; margin-top: 30px; }
 
+.meta-detail {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px;
+}
+.meta-detail-item {
+  padding: 16px 24px; border: 1px solid var(--line); border-radius: 12px; background: #fff;
+}
+.meta-detail-item .k { font-size: 13px; color: var(--muted); letter-spacing: .04em; }
+.meta-detail-item .v { font-size: 15px; color: var(--ink); line-height: 1.8; margin-top: 6px; }
+@media (max-width: 600px) { .meta-detail { grid-template-columns: 1fr; } }
+
 .case-section { padding-top: 88px; }
 .case-section > .section-title { margin-bottom: 34px; }
 .prose { max-width: none; }
