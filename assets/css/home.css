@@ -1,0 +1,87 @@
+/* ============================================================
+   YA HSIU — home page
+   ============================================================ */
+
+.hero { padding: 104px 0 110px; }
+.hero-inner { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.hero-title {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: clamp(44px, 6.2vw, 72px); line-height: 1.04; letter-spacing: -.01em;
+  color: var(--ink); margin: 0;
+}
+.hero-sub {
+  font-family: var(--font-head); font-weight: 400;
+  font-size: clamp(20px, 2.4vw, 28px); color: var(--ink); margin: 22px 0 0;
+}
+.hero-sub strong { font-weight: 700; }
+.hero-note {
+  font-size: 15px; letter-spacing: .04em; color: var(--muted);
+  margin: 30px 0 0;
+}
+.hero-scroll {
+  margin-top: 54px; width: 26px; height: 42px; border: 1.5px solid var(--line);
+  border-radius: 999px; display: flex; justify-content: center; padding-top: 8px;
+}
+.hero-scroll span {
+  width: 4px; height: 8px; border-radius: 2px; background: var(--gold);
+  animation: scrolldot 1.6s ease-in-out infinite;
+}
+@keyframes scrolldot { 0%,100% { transform: translateY(0); opacity: .4; } 50% { transform: translateY(8px); opacity: 1; } }
+
+.projects { padding: 24px 0 100px; }
+.projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.card {
+  display: block; background: #fff; border-radius: 6px;
+  box-shadow: var(--shadow-card);
+  transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
+}
+.card:hover { transform: translateY(-8px); box-shadow: 0 1px 2px rgba(43,40,37,.06), 0 34px 60px -30px rgba(43,40,37,.4); }
+.card-media {
+  aspect-ratio: 13 / 9; border-radius: 6px 6px 0 0;
+}
+.card-media .card-cat {
+  position: absolute; left: 14px; bottom: 14px; z-index: 2;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 12px;
+  letter-spacing: .04em; color: var(--ink);
+  background: rgba(255,255,255,.9); padding: 4px 12px; border-radius: 4px;
+}
+.card-body { padding: 32px 32px 34px; }
+.card-title {
+  font-family: var(--font-head); font-weight: 700; font-size: 22px;
+  color: var(--gold); margin: 0 0 16px; letter-spacing: .01em;
+  transition: color .25s ease;
+}
+.card:hover .card-title { color: var(--gold-deep); }
+.card-title::after {
+  content: "\2192"; display: inline-block; margin-left: 8px;
+  opacity: 0; transform: translateX(-6px);
+  transition: opacity .28s ease, transform .28s ease; color: var(--gold);
+}
+.card:hover .card-title::after { opacity: 1; transform: translateX(0); }
+.card-media { transition: filter .3s ease; }
+.card:hover .card-media { filter: saturate(1.06) contrast(1.02); }
+.card-desc {
+  font-size: 14.5px; line-height: 1.95; color: var(--ink-soft); margin: 0 0 26px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.see-more { display: flex; justify-content: center; padding: 52px 0 8px; }
+
+.about { padding: 110px 0 120px; }
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1.05fr; gap: 84px; align-items: start;
+}
+.about-title {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: clamp(26px, 3vw, 34px); line-height: 1.4; color: var(--ink);
+  margin: 0 0 30px;
+}
+.about-p { font-size: 16px; line-height: 1.95; color: var(--ink-soft); margin: 0 0 22px; max-width: 30em; }
+.about-en { font-size: 15px; line-height: 1.85; color: var(--ink-soft); margin: 0 0 26px; max-width: 32em; }
+.about-media { aspect-ratio: 6 / 5; border-radius: 6px; }
+
+@media (max-width: 860px) {
+  .projects-grid { grid-template-columns: 1fr; gap: 24px; }
+  .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  .about { padding: 72px 0 80px; }
+}
