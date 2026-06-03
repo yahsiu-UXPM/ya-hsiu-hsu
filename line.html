@@ -32,6 +32,10 @@
   <div class="wrap-read case-head">
     <h1 class="case-title reveal">LINE 客服機器人 專案</h1>
     <p class="case-lead reveal" data-d="1">以客戶輪廓洞察為基礎，導入 n8n + Supabase 自動化客服解決方案，在不增加額外人力成本下解決回應即時性的瓶頸。</p>
+    <!-- 主視覺：手機版顯示於此，桌機/平板隱藏 -->
+    <figure class="case-hero-mobile reveal" data-d="2">
+      <img src="images/line-chat-bot/line-chat-bot-visual.png" alt="LINE 客服機器人主視覺" />
+    </figure>
 
     <div class="meta-row reveal" data-d="2">
       <div class="meta-box tint"><div class="k">專案類型</div><div class="v">電商客服機器人</div></div>
@@ -47,8 +51,8 @@
     </div>
   </div>
 
-  <!-- ===== 主視覺 ===== -->
-  <section class="wrap-read case-section">
+  <!-- ===== 主視覺：桌機/平板顯示於此，手機隱藏 ===== -->
+  <section class="wrap-read case-section case-hero-desktop">
     <figure class="mock-fig reveal" style="margin-top:0;">
       <img src="images/line-chat-bot/line-chat-bot-visual.png" alt="LINE 客服機器人主視覺" style="width:100%;border-radius:12px;display:block;" />
     </figure>
@@ -170,7 +174,7 @@
     <div class="prose reveal" data-d="1" style="margin-top:28px;">
       <p>透過 LINE Webhook 接收訊息，由 n8n Workflow 判斷關鍵字後，至 Supabase FAQ 資料庫比對標籤，找到對應答案再以 LINE Reply 回覆。整體達成自動化處理、精準回覆、安全可靠與彈性擴充。</p>
     </div>
-    <figure class="mock-fig reveal" data-d="1" style="margin-top:32px;">
+    <figure class="mock-fig bleed-mobile reveal" data-d="1" style="margin-top:32px;">
       <img src="images/line-chat-bot/line-flow.png" alt="解決方案流程・n8n + Supabase" style="width:100%;border-radius:12px;border:1px solid var(--line-soft);display:block;" />
     </figure>
   </section>
@@ -253,7 +257,7 @@
     <h3 class="section-title reveal" data-d="1" style="font-size:20px; margin-top:48px;">n8n Switch 關鍵字分流</h3>
 
 
-    <figure class="mock-fig reveal" data-d="1" style="margin-top:40px;">
+    <figure class="mock-fig bleed-mobile reveal" data-d="1" style="margin-top:40px;">
       <img src="images/line-chat-bot/line-architecture.png" alt="n8n 系統架構規劃" style="width:100%;border-radius:12px;border:1px solid var(--line-soft);display:block;" />
       <figcaption>系統架構規劃・n8n Workflow 分流邏輯</figcaption>
     </figure>

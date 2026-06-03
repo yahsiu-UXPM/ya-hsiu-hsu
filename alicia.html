@@ -33,13 +33,15 @@
     <h1 class="case-title reveal">Alicia｜UX 陪跑教練<br />AI-Native 對話機器人</h1>
     <p class="case-lead reveal" data-d="1">結合 CUI 文字對話與 GUI 選單按鈕的 AI 原生產品，以 GAS + Gemini API + LINE 技術架構，創造整日在線的 UX 陪跑教練。</p>
     <p class="case-kind reveal" data-d="2"><span class="gold">0→1 獨立產品</span></p>
-
+    <!-- 主視覺：手機版顯示於此，桌機/平板隱藏 -->
+    <figure class="case-hero-mobile reveal" data-d="2">
+      <img src="images/alicia/Alicia%20%20visual.png" alt="Alicia AI 陪跑教練主視覺" />
+    </figure>
     <div class="meta-row reveal" data-d="2">
       <div class="meta-box tint"><div class="k">專案類型</div><div class="v">AI Product · EdTech</div></div>
       <div class="meta-box tint"><div class="k">我的角色</div><div class="v">PO / 產品發起人</div></div>
       <div class="meta-box tint"><div class="k">專案時間</div><div class="v">2025.11 — 2026.05</div></div>
     </div>
-
     <div class="pill-row reveal" data-d="3">
       <span class="pill">0→1 MVP</span>
       <span class="pill">AI Native</span>
@@ -49,8 +51,8 @@
     </div>
   </div>
 
-  <!-- ===== 主視覺 ===== -->
-  <section class="wrap-read case-section">
+  <!-- ===== 主視覺：桌機/平板顯示於此，手機隱藏 ===== -->
+  <section class="wrap-read case-section case-hero-desktop">
     <figure class="mock-fig reveal" style="margin-top:0;">
       <img src="images/alicia/Alicia%20%20visual.png" alt="Alicia AI 陪跑教練主視覺" style="width:100%;border-radius:12px;display:block;" />
     </figure>
@@ -127,11 +129,6 @@
         <div class="k">有效資料率</div>
         <div class="num" data-count="100">100<small>%</small></div>
         <div class="sub">乾淨對話紀錄</div>
-      </div>
-      <div class="metric">
-        <div class="k">MVP 回訪率</div>
-        <div class="num" data-count="80">80<small>%</small></div>
-        <div class="sub">2–4 天主動回訪</div>
       </div>
     </div>
   </section>
@@ -286,7 +283,7 @@
   <section class="wrap-read case-section">
     <h2 class="section-title reveal">人物誌 Persona</h2>
     <p class="prose reveal" data-d="1" style="margin-top:18px;">透過兩輪驗證（初始需求訪談 vs. 原型實測），重新定義目標使用者輪廓：</p>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:32px;">
+    <div class="persona-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:32px;">
 
       <!-- Persona A -->
       <div class="reveal" style="border:1px solid var(--line); border-radius:14px; overflow:hidden;">
@@ -422,12 +419,14 @@
         <div>
           <h4>導入 XML 標籤隔離・情境分流架構</h4>
           <p class="line">重構 Prompt 架構，利用 <span class="hl">&lt;Dynamic_Scenarios&gt;</span> 與反向提示（Negative Prompts），精準封鎖人設邊界，徹底解決指令溢出，確保對話 100% 符合當下情境。</p>
-          <div class="code-block" style="margin-top:16px;">
-            <div class="cb-header">
-              <div class="cb-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
-              <span class="cb-lang">dynamic_scenarios.prompt</span>
-            </div>
-            <pre><span class="tok-comment">// 利用 XML 自定義標籤 和 反向提示規範（部分 prompt）</span>
+        </div>
+      </div>
+      <div class="code-block" style="margin:0 0 0;">
+        <div class="cb-header">
+          <div class="cb-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+          <span class="cb-lang">dynamic_scenarios.prompt</span>
+        </div>
+        <pre><span class="tok-comment">// 利用 XML 自定義標籤 和 反向提示規範（部分 prompt）</span>
 
 <span class="tok-tag">&lt;Dynamic_Scenarios&gt;</span>
   根據用戶當前語意與狀態，自動分流至以下情境，
@@ -438,8 +437,6 @@
   - ⚠ 安全護欄：<span class="tok-kw">絕對禁止</span>提供對照組或拋出嚴厲的實戰
     反問，將認知負載降至最低。
 <span class="tok-tag">&lt;/Dynamic_Scenarios&gt;</span></pre>
-          </div>
-        </div>
       </div>
 
       <div class="step">
@@ -447,12 +444,14 @@
         <div>
           <h4>實施行動優先的隱性護欄・Show, don't tell</h4>
           <p class="line">導入「演而不說」的強制約束原則，封印 AI 解釋後台邏輯的慣性，縮短無效廢話，將首則回覆時間降至最低，找回真人般俐落的沉浸式互動。</p>
-          <div class="code-block" style="margin-top:16px;">
-            <div class="cb-header">
-              <div class="cb-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
-              <span class="cb-lang">no_meta_comment.prompt</span>
-            </div>
-            <pre><span class="tok-comment">// 處理 AI 後設評論（部分 prompt）</span>
+        </div>
+      </div>
+      <div class="code-block" style="margin:0 0 0;">
+        <div class="cb-header">
+          <div class="cb-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+          <span class="cb-lang">no_meta_comment.prompt</span>
+        </div>
+        <pre><span class="tok-comment">// 處理 AI 後設評論（部分 prompt）</span>
 
 <span class="tok-tag">&lt;Dynamic_Scenarios&gt;</span>
   [<span class="tok-str">Scenario 2: 求職把關與多模態履歷解析</span>]
@@ -460,8 +459,6 @@
     封印後設評論：<span class="tok-kw">【絕對禁止】</span>向用戶解釋 STAR、
     ATS 標準、對照組格式或任何系統規則。
 <span class="tok-tag">&lt;/Dynamic_Scenarios&gt;</span></pre>
-          </div>
-        </div>
       </div>
 
       <div class="step">
@@ -469,12 +466,14 @@
         <div>
           <h4>極限情境的優雅降級・Auto-Retry 容錯機制</h4>
           <p class="line">開發 Auto-Retry 後端自動重試容錯機制，針對無法避免的 429/503 崩潰事件，攔截並轉譯為擬人化的優雅安撫文案，用友善的 UX 文案包裹 AI 技術極限，維持體驗的連續性。</p>
-          <div class="code-block" style="margin-top:16px;">
-            <div class="cb-header">
-              <div class="cb-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
-              <span class="cb-lang">graceful_degradation.js</span>
-            </div>
-            <pre><span class="tok-comment">// A. 處理 429 流量限制</span>
+        </div>
+      </div>
+      <div class="code-block" style="margin:0 0 0;">
+        <div class="cb-header">
+          <div class="cb-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+          <span class="cb-lang">graceful_degradation.js</span>
+        </div>
+        <pre><span class="tok-comment">// A. 處理 429 流量限制</span>
 <span class="tok-kw">if</span> (<span class="tok-var">status</span> === <span class="tok-num">429</span>) {
   <span class="tok-kw">let</span> <span class="tok-var">errorMsg</span> = <span class="tok-var">responseText</span>;
   <span class="tok-kw">try</span> {
@@ -497,8 +496,6 @@
   <span class="tok-kw">return</span> <span class="tok-str">"💡 哎呀，剛才訊號似乎被全球開發者擠斷了（系統標註："</span>
        + <span class="tok-var">status</span> + <span class="tok-str">"）。\n\n請重新傳送剛才的內容，讓我再試一次！"</span>;
 }</pre>
-          </div>
-        </div>
       </div>
     </div>
   </section>
