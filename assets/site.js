@@ -310,23 +310,26 @@ document.addEventListener('DOMContentLoaded', function () {
         if (firstBad) { var i = firstBad.querySelector('input, textarea'); if (i) i.focus(); }
         return;
       }
-      var get = function (n) { var el = form.querySelector('[name="' + n + '"]'); return el ? el.value.trim() : ''; };
-      var name = get('name'), email = get('email'), subject = get('subject'), message = get('message');
-      // compose a mailto as a no-backend fallback
-      if (TO) {
-        var body = encodeURIComponent('姓名：' + name + '\nEmail：' + email + '\n\n' + message);
-        var subj = encodeURIComponent(subject || ('來自 ' + name + ' 的訊息'));
-        setTimeout(function () { window.location.href = 'mailto:' + TO + '?subject=' + subj + '&body=' + body; }, 400);
-      }
-      // show success state
-      var success = document.querySelector('.form-success');
-      var fieldsWrap = form.querySelector('.form-fields');
-      if (fieldsWrap) fieldsWrap.style.display = 'none';
-      if (success) {
-        success.classList.add('show');
-        var nm = success.querySelector('[data-success-name]');
-        if (nm) nm.textContent = name ? name.split(' ')[0] : '';
-      }
+      var name = form.querySelector('[name="name"]') ? form.querySelector('[name="name"]').value.trim() : '';
+      var formData = new FormData(form);
+      var btn = form.querySelector('.btn-submit');
+      if (btn) btn.disabled = true;
+      fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
+        .then(function (res) { return res.json(); })
+        .then(function () {
+          var success = document.querySelector('.form-success');
+          var fieldsWrap = form.querySelector('.form-fields');
+          if (fieldsWrap) fieldsWrap.style.display = 'none';
+          if (success) {
+            success.classList.add('show');
+            var nm = success.querySelector('[data-success-name]');
+            if (nm) nm.textContent = name ? name.split(' ')[0] : '';
+          }
+        })
+        .catch(function () {
+          if (btn) btn.disabled = false;
+          alert('送出失敗，請稍後再試。');
+        });
     });
   }
 
