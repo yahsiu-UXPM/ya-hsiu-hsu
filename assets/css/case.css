@@ -131,7 +131,7 @@
 .metric .num small { font-size: 20px; margin-left: 2px; }
 .metric .sub { text-align: center; font-size: 14px; font-weight: 700; color: var(--gold-deep); margin-bottom: 16px; }
 .metric ul { list-style: none; padding: 0; margin: 0; }
-.metric li { font-size: 13px; line-height: 1.8; color: var(--ink-soft); padding-left: 15px; position: relative; margin-bottom: 8px; }
+.metric li { font-size: 13px; line-height: 1.8; color: var(--ink-soft); padding-left: 15px; position: relative; margin-bottom: 8px; text-align: justify; }
 .metric li::before { content: "·"; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
 
 /* market + venn */
@@ -377,7 +377,7 @@
   color: var(--gold-deep); margin: 0 0 14px; padding: 5px 12px; border-radius: 7px;
   background: var(--gold-tint);
 }
-.hl-card p { font-size: 16px; line-height: 1.9; color: var(--ink-soft); margin: 0; }
+.hl-card p { font-size: 16px; line-height: 1.9; color: var(--ink-soft); margin: 0; text-align: justify; }
 
 /* video placeholder slot */
 .video-slot {

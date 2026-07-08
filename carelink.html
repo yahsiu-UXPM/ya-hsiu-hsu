@@ -36,9 +36,10 @@
     <p class="case-kind reveal" data-d="2"><span class="gold">AgeTech Side Project</span> × 馬偕醫護管理學校合作</p>
 
     <div class="meta-row reveal" data-d="2">
-      <div class="meta-box tint"><div class="k">我的角色</div><div class="v">PM / UX</div></div>
       <div class="meta-box tint"><div class="k">專案類型</div><div class="v">長照醫療</div></div>
+      <div class="meta-box tint"><div class="k">我的角色</div><div class="v">PM / UX</div></div>
       <div class="meta-box tint"><div class="k">專案時間</div><div class="v">2026.03 — 2026.04</div></div>
+      <div class="meta-box tint case-meta-mobile"><div class="k">團隊組成</div><div class="v">PM × 3、前端 × 1、服務設計 × 1、UIUX × 1</div></div>
     </div>
 
     <div class="pill-row reveal" data-d="3">
@@ -49,30 +50,34 @@
     </div>
   </div>
 
-  <!-- ===== INTRO ===== -->
-  <div class="wrap-read case-section prose reveal">
-    <p>台灣家庭照護，本質上是資訊協作問題。紀錄散落在 LINE 群組、紙本日誌、口頭交代之間，主要照顧者成了唯一的資訊節點，次要照顧者永遠不知道昨天發生了什麼，就醫前半小時才在手機裡翻記錄。</p>
-    <p>CareLink 不是要做完整的醫療診斷系統。第一步只想解決一件事：讓照顧者之間的資訊傳遞，不再這麼費力。</p>
-  </div>
-
   <!-- ===== HERO IMAGE ===== -->
   <div class="wrap-read" style="margin-top:48px;">
     <figure class="mock-fig" style="margin:0;">
       <img src="images/careLink/CareLink Visual.png" alt="CareLink 介面視覺" style="width:100%;border-radius:14px;border:1px solid var(--line-soft);" />
     </figure>
+    <div class="meta-detail case-meta-desktop reveal" style="margin-top:20px;">
+      <div class="meta-detail-item">
+        <div class="k">團隊組成</div>
+        <div class="v">PM × 3、前端 × 1、服務設計 × 1、UIUX × 1</div>
+      </div>
+    </div>
   </div>
 
-  <!-- ===== 專案摘要 ===== -->
+  <!-- ===== 專案起源 ===== -->
   <section class="wrap-read case-section">
-    <h2 class="section-title reveal">專案摘要</h2>
+    <h2 class="section-title reveal">專案起源</h2>
     <div class="prose reveal" data-d="1" style="margin-top:24px;">
-      <p><strong>團隊組成：</strong>3 PM · 1 Front-end Engineer · 1 Server Engineer · 1 UX/UI</p>
-      <p><strong>我的角色：</strong>UX / PM｜產品策略、使用者研究、原型設計、A/B Test 分析</p>
+      <p>台灣家庭照護，本質上是資訊協作問題。紀錄散落在 LINE 群組、紙本日誌、口頭交代之間，主要照顧者成了唯一的資訊節點，次要照顧者永遠不知道昨天發生了什麼，就醫前半小時才在手機裡翻記錄。</p>
+      <p>CareLink 不是要做完整的醫療診斷系統。第一步只想解決一件事：讓照顧者之間的資訊傳遞，不再這麼費力。</p>
     </div>
-    <div class="callout reveal" data-d="2">
-      <div class="k">核心價值主張</div>
+  </section>
+
+  <!-- ===== 核心價值 ===== -->
+  <section class="wrap-read case-section">
+    <h2 class="section-title reveal">核心價值</h2>
+    <div class="callout reveal" data-d="1" style="margin-top:24px;">
       <div class="q">「同步日常點滴，照護不再孤單」</div>
-      <div class="note">優先解決「高頻、低門檻、高壓力」的照護溝通問題，而不是一開始就做完整醫療診斷或複雜健康管理系統。</div>
+      <div class="note">優先解決「高頻、低門檻、高壓力」的照護溝通問題，減緩照顧者彼此間的照護壓力。</div>
     </div>
   </section>
 
@@ -82,15 +87,16 @@
     <div class="hl-grid reveal" data-d="1" style="margin-top:28px;">
       <div class="hl-card">
         <h4>資訊共享與隱私控制是同一個需求</h4>
-        <p>「家人主動同步」和「資料隱私機制」在原型測試並列最高分（9.75/10）。家屬要共享資訊，前提是能控制誰看得到。LINE 沒有結構化隱私分層，紙本不能自動同步，兩個功能缺一個，另一個就不成立。</p>
+        <p>「家人主動同步」和「資料隱私機制」在原型測試並列最高 9.75 分，家屬希望資訊共享的前提是能控制誰看得到，LINE 沒有結構化隱私分層，紙本不能自動同步，兩個功能各缺一個。</p>
       </div>
       <div class="hl-card">
         <h4>AI 信任的關鍵是控制感，不是透明度</h4>
-        <p>A/B 測試驗證三種設計：只標示來源 7.5 分，讓使用者能修改 8.75 分，保留修改紀錄 9.5 分。差距清楚，方向也清楚：不是告訴使用者「這是 AI 生成的」就能建立信任，而是讓他們能動它、看得到誰動過。</p>
+        <p>A/B Testing 驗證三種設計：只標示來源 7.5 分，讓使用者能修改 8.75 分，保留修改紀錄 9.5 分。
+使用者對於「 AI 生成內容」無法有信任感，而讓使用者掌握編輯權限、資料修改紀錄和資料來源，可以累積建立信任。</p>
       </div>
       <div class="hl-card" style="grid-column:1/-1;">
         <h4>設計決策直接移動商業指標</h4>
-        <p>原型測試付費意願 7.25，A/B 測試加入 AI 透明度機制與圖表呈現後跳到 9.0，整體滿意度從 7.75 到 9.0。功能設計的改變，直接反映在使用者願不願意掏錢這件事上。</p>
+        <p>原型 PoC 驗證付費意願為 7.25 分，而 A/B Testing 加入 AI 透明度機制與圖表呈現後跳到 9 分，功能設計的優化，直接反映在使用者的付費意願上。</p>
       </div>
     </div>
   </section>
@@ -105,9 +111,8 @@
         <div class="num" data-count="97">97.5<small>%</small></div>
         <div class="sub">A/B 測試最高分功能</div>
         <ul>
-          <li>AI 自動摘要取代手動整理</li>
-          <li>家屬不需反覆向家人更新狀況</li>
-          <li>一鍵生成可交接的結構化紀錄</li>
+          <li>AI 整理可交接的結構式摘要，取代手動整理</li>
+          <li>卡片式資訊呈現和圖表紀錄，減少家屬間反覆更新狀況作業</li>
         </ul>
       </div>
       <div class="metric">
@@ -116,8 +121,7 @@
         <div class="sub">賦權勝過透明度</div>
         <ul>
           <li>保留修改紀錄比標示 AI 來源高出 2 分</li>
-          <li>讓使用者能修改才能真正建立信任</li>
-          <li>設計方向：告知 → 賦權</li>
+          <li>讓使用者擁有修改權利，能建立產品信任</li>
         </ul>
       </div>
       <div class="metric">
@@ -125,9 +129,8 @@
         <div class="num" data-count="90">90<small>%</small></div>
         <div class="sub">早期商業轉換訊號</div>
         <ul>
-          <li>原型測試 7.25 → A/B 測試後跳升至 9.0</li>
           <li>AI 透明度機制與圖表設計直接帶動轉換</li>
-          <li>出現首位願意支付 NT$500 以上月費的受訪者</li>
+          <li>多數受訪者對付費展現高意願（有使用者表示願支付 NT$500 以上月費）</li>
         </ul>
       </div>
       <div class="metric">
@@ -155,7 +158,7 @@
 
     <h3 class="reveal" data-d="1" style="font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--ink);margin:32px 0 14px;">深層痛點分析</h3>
     <div class="ptable-wrap reveal" data-d="1">
-      <div class="cmp-table" style="min-width:680px;">
+      <div class="cmp-table cmp-full-border" style="min-width:680px;">
         <div class="cmp-row head" style="grid-template-columns:140px repeat(3,1fr);">
           <div class="cmp-cell side">痛點</div>
           <div class="cmp-cell focus">表面現象</div>
@@ -236,26 +239,26 @@
   <section class="wrap-read case-section">
     <h2 class="section-title reveal">目標使用者與核心價值</h2>
     <div class="ptable-wrap reveal" data-d="1" style="margin-top:28px;">
-      <div class="cmp-table" style="min-width:560px;">
-        <div class="cmp-row head" style="grid-template-columns:160px 1fr 1fr;">
-          <div class="cmp-cell side">使用者角色</div>
+      <div class="cmp-table" style="min-width:590px;">
+        <div class="cmp-row head" style="grid-template-columns:190px 1fr 1fr;">
+          <div class="cmp-cell side" style="white-space:nowrap;">使用者角色</div>
           <div class="cmp-cell focus">核心困境</div>
           <div class="cmp-cell">CareLink 解決的事</div>
         </div>
-        <div class="cmp-row" style="grid-template-columns:160px 1fr 1fr;">
-          <div class="cmp-cell side">主要照顧者 / 居服員</div>
-          <div class="cmp-cell focus">反覆回答「今天怎樣」「有沒有吃藥」，一人承擔所有資訊責任</div>
-          <div class="cmp-cell">從資訊承擔者，變成有系統支持的照護管理者</div>
+        <div class="cmp-row" style="grid-template-columns:190px 1fr 1fr;">
+          <div class="cmp-cell side" style="white-space:nowrap;">主要照顧者 / 居服員</div>
+          <div class="cmp-cell focus" style="text-align:justify;">除了負責主要照護外，還需反覆回答「今天怎樣」「有沒有吃藥」，一人承擔所有資訊責任</div>
+          <div class="cmp-cell" style="text-align:justify;">從資訊承擔者，變成有系統支持的照護管理者</div>
         </div>
-        <div class="cmp-row" style="grid-template-columns:160px 1fr 1fr;">
-          <div class="cmp-cell side">次要照顧者 / 家屬</div>
-          <div class="cmp-cell focus">不知道平常狀況、不知道看哪科，臨時接手時完全沒把握</div>
-          <div class="cmp-cell">從旁觀焦慮者，變成可實際接手的協作者</div>
+        <div class="cmp-row" style="grid-template-columns:190px 1fr 1fr;">
+          <div class="cmp-cell side" style="white-space:nowrap;">次要照顧者 / 家屬</div>
+          <div class="cmp-cell focus" style="text-align:justify;">不知道平常狀況、不知道看哪科，臨時接手時完全沒把握</div>
+          <div class="cmp-cell" style="text-align:justify;">從旁觀不知如何協助的焦慮者，變成可實際接手的協作者</div>
         </div>
-        <div class="cmp-row" style="grid-template-columns:160px 1fr 1fr;">
-          <div class="cmp-cell side">醫療 / 長照專業端</div>
-          <div class="cmp-cell focus">只看到單次門診資訊，無法理解照護上下文，重複問、重複評估</div>
-          <div class="cmp-cell">從片段判斷，走向脈絡化介入</div>
+        <div class="cmp-row" style="grid-template-columns:190px 1fr 1fr;">
+          <div class="cmp-cell side" style="white-space:nowrap;">醫療 / 長照專業端</div>
+          <div class="cmp-cell focus" style="text-align:justify;">只看到單次門診資訊，缺少過往照護或上下文紀錄，重複問、重複評估</div>
+          <div class="cmp-cell" style="text-align:justify;">從片段判斷，走向脈絡化介入</div>
         </div>
       </div>
     </div>
@@ -298,9 +301,10 @@
     </div>
   </section>
 
-  <!-- ===== 功能假設與驗證核心 ===== -->
+  <!-- ===== 原型 PoC 驗證 ===== -->
   <section class="wrap-read case-section">
-    <h2 class="section-title reveal">功能假設與驗證核心</h2>
+    <h2 class="section-title reveal">原型 PoC 驗證</h2>
+    <p class="reveal" style="font-size:13px;color:var(--muted);margin:6px 0 0;">以下四個功能假設，透過 Vibe Coding 打造的互動原型進行問卷驗證，測量的是使用者對概念的接受度與需求強度，並非已實作、可量測準確率的 AI 模型。</p>
 
     <div class="reveal" data-d="1" style="margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start;">
       <figure class="mock-fig" style="margin:0;">
@@ -322,28 +326,32 @@
         <div class="n">1</div>
         <div>
           <h4>導入「語音輸入」降低紀錄門檻</h4>
-          <p class="line">考慮到長輩與照顧者可能不擅長 3C，系統核心功能支援語音輸入快速紀錄吃喝拉撒睡，讓忙碌的照顧者可以用講的完成紀錄，不需停下手邊工作。</p>
+          <p class="line"><span class="lbl">問題假設：</span>主要照顧者長時間高負荷照護，現場沒有時間打字紀錄，長輩與照顧者也可能不擅長操作 3C 產品。</p>
+          <p class="line"><span class="lbl">解決方案：</span>系統核心功能支援語音輸入快速紀錄吃喝拉撒睡，讓忙碌的照顧者可以用講的完成紀錄，不需停下手邊工作。</p>
         </div>
       </div>
       <div class="step">
         <div class="n">2</div>
         <div>
-          <h4>內建「AI 微弱訊號偵測與科別導航」</h4>
-          <p class="line">將長期的情緒、用藥、飲食紀錄交由 AI 分析。當偵測到長輩行為頻率異常（如情緒不穩、睡眠改變），系統主動發出<span class="hl">「預警訊號」</span>，並根據症狀精準建議應該掛哪一個科別或尋求何種長照資源。</p>
+          <h4>AI 異常訊號提示與科別建議</h4>
+          <p class="line"><span class="lbl">問題假設：</span>個案出現行為頻率異常（如情緒不穩、睡眠改變）時，家屬可能沒有察覺，或即使注意到狀況也不知道該掛哪一科諮詢。</p>
+          <p class="line"><span class="lbl">解決方案：</span>系統主動提示<span class="hl">「需要留意的訊號」</span>，並建議可能適合諮詢的科別或個案資源，驗證使用者是否需要、是否信任這類提示機制。</p>
         </div>
       </div>
       <div class="step">
         <div class="n">3</div>
         <div>
-          <h4>照護摘要</h4>
-          <p class="line">統整飲食狀況、飲水量、排泄時間與複雜用藥（經常多達 10–20 種）的平台，確保任何接手的家屬或看護都能一眼掌握，取代傳統的紙本或 Excel。</p>
+          <h4>AI 照護摘要生成</h4>
+          <p class="line"><span class="lbl">問題假設：</span>照顧者需要一邊照顧個案、一邊分神整理飲食狀況、飲水量、排泄時間與複雜用藥（經常多達 10–20 種）等當日照護細節，整理過程容易出現疏漏。</p>
+          <p class="line"><span class="lbl">解決方案：</span>AI 自動統整照護摘要，確保任何接手的家屬或看護都能一眼掌握現況，取代傳統的紙本或 Excel 紀錄方式。</p>
         </div>
       </div>
       <div class="step">
         <div class="n">4</div>
         <div>
           <h4>醫囑 SOP 化</h4>
-          <p class="line">看診後用語音方式整理醫囑、用藥指引資訊，避免照護過程中出現轉述錯或遺漏的狀況。</p>
+          <p class="line"><span class="lbl">問題假設：</span>看診後醫囑在家庭成員間仰賴口頭轉述，容易出現轉述錯誤或遺漏用藥指引的狀況。</p>
+          <p class="line"><span class="lbl">解決方案：</span>看診後用語音方式整理醫囑、用藥指引資訊並步驟化呈現，避免照護過程中出現轉述錯或遺漏的狀況。</p>
         </div>
       </div>
     </div>
@@ -363,87 +371,86 @@
         <div class="cmp-row" style="grid-template-columns:160px 150px 1fr;">
           <div class="cmp-cell side">導入「語音輸入」降低紀錄門檻</div>
           <div class="cmp-cell focus">主要照顧者高負荷、現場沒時間打字</div>
-          <div class="cmp-cell">語音記錄功能獲得滿分 10/10，所有受訪者給出最高評價</div>
+          <div class="cmp-cell">語音記錄功能獲得滿分 10 分，所有受訪者均給出最高評價</div>
         </div>
         <div class="cmp-row" style="grid-template-columns:160px 150px 1fr;">
-          <div class="cmp-cell side">AI 微弱訊號偵測與科別導航</div>
-          <div class="cmp-cell focus">家屬觀察到異常卻無法判讀，不知道掛哪科</div>
-          <div class="cmp-cell">異常導航 7.0，次要照顧者接觸緊急場景少，感受較弱；主要照顧者樣本待補驗</div>
+          <div class="cmp-cell side">AI 異常訊號提示與科別建議</div>
+          <div class="cmp-cell focus">細微異常家屬沒有觀察到，或注意到狀況卻不知道掛哪科</div>
+          <div class="cmp-cell">異常導航 7 分，受訪者認為設計未貼近真實情境，次要照顧者接觸緊急場景少，感受較弱；主要照顧者樣本待補驗</div>
         </div>
         <div class="cmp-row" style="grid-template-columns:160px 150px 1fr;">
-          <div class="cmp-cell side">照護摘要</div>
-          <div class="cmp-cell focus">突發狀況時家屬沒有決策依靠</div>
-          <div class="cmp-cell">緊急摘要 7.25，受訪者認為設計未貼近真實情境；樣本以次要照顧者為主，假設未竟</div>
+          <div class="cmp-cell side">AI 照護摘要生成</div>
+          <div class="cmp-cell focus">照顧者要一邊照顧個案，又需要分神整理當日照護細節，整理過程可能出現疏漏</div>
+          <div class="cmp-cell">受訪者表示有需求，但對於把結果全權交給 AI 表現擔心疑慮，對 AI 無法完全信任。</div>
         </div>
         <div class="cmp-row" style="grid-template-columns:160px 150px 1fr;">
           <div class="cmp-cell side">醫囑 SOP 化</div>
           <div class="cmp-cell focus">看診後醫囑在家庭內被轉述錯或遺漏</div>
-          <div class="cmp-cell">用藥整理成時間表 9.0、步驟化指引 8.75，兩題均高分驗證</div>
+          <div class="cmp-cell">用藥整理成時間表 9 分、步驟化指引 8.75 分，兩題均高分驗證</div>
         </div>
       </div>
     </div>
 
-    <h3 class="reveal" data-d="2" style="font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--ink);margin:40px 0 14px;">高分功能摘要（原型測試，平均 ≥ 9.0）</h3>
-    <div class="cmp-table reveal" data-d="2">
-      <div class="cmp-row head" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell focus">功能</div>
-        <div class="cmp-cell" style="text-align:center;">平均分</div>
+    <details class="kw-block reveal" data-d="2" style="margin-top:40px;">
+      <summary style="font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--ink);">高分功能摘要（原型測試，平均 ≥ 9.0）</summary>
+      <div class="cmp-table" style="margin-top:14px;">
+        <div class="cmp-row head" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell focus">功能</div>
+          <div class="cmp-cell" style="text-align:center;">平均分</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">家人主動資訊同步</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.75</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">資料隱私機制</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.75</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">分層資訊呈現（日常摘要 → 醫護詳情）</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.25</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">自動發送摘要</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.25</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">用藥整理成時間表</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.0</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">比 LINE / 紙本更少遺漏重要資訊</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.0</div>
+        </div>
       </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">家人主動資訊同步</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.75</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">資料隱私機制</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.75</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">分層資訊呈現（日常摘要 → 醫護詳情）</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.25</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">自動發送摘要</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.25</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">用藥整理成時間表</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.0</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">比 LINE / 紙本更少遺漏重要資訊</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.0</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">照護資訊持續記錄的價值</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.0</div>
-      </div>
-    </div>
+    </details>
 
-    <h3 class="reveal" data-d="3" style="font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--ink);margin:40px 0 14px;">需要補強的方向</h3>
+    <h3 class="reveal" data-d="3" style="font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--ink);margin:40px 0 14px;">功能優化方向</h3>
     <div class="ptable-wrap reveal" data-d="3">
-      <div class="cmp-table" style="min-width:560px;">
-        <div class="cmp-row head" style="grid-template-columns:150px 1fr 1fr;">
+      <div class="cmp-table" style="min-width:680px;">
+        <div class="cmp-row head" style="grid-template-columns:140px 1fr 1fr;">
           <div class="cmp-cell side">缺口</div>
           <div class="cmp-cell focus">數據信號</div>
-          <div class="cmp-cell">設計方向</div>
+          <div class="cmp-cell">AB 測試解法</div>
         </div>
-        <div class="cmp-row" style="grid-template-columns:150px 1fr 1fr;">
+        <div class="cmp-row" style="grid-template-columns:140px 1fr 1fr;">
           <div class="cmp-cell side">情緒支持層 UX</div>
           <div class="cmp-cell focus">降低照護壓力 6.75，比功能型題目低近兩分</div>
-          <div class="cmp-cell">功能之外，需要設計「被陪伴感」，不是更多資訊</div>
+          <div class="cmp-cell">AI 資料統計與匯出，讓照顧者看見康復趨勢，帶來正面情緒回饋</div>
         </div>
-        <div class="cmp-row" style="grid-template-columns:150px 1fr 1fr;">
+        <div class="cmp-row" style="grid-template-columns:140px 1fr 1fr;">
           <div class="cmp-cell side">緊急情境功能</div>
           <div class="cmp-cell focus">緊急摘要指引 7.25，用戶認為設計未貼近真實情境</div>
-          <div class="cmp-cell">本輪樣本以次要照顧者為主，接觸緊急場景頻率低。需補足主要照顧者樣本後重新驗證</div>
+          <div class="cmp-cell">從「步驟指引」改為一鍵聯絡緊急聯絡人或撥打 119</div>
         </div>
-        <div class="cmp-row" style="grid-template-columns:150px 1fr 1fr;">
+        <div class="cmp-row" style="grid-template-columns:140px 1fr 1fr;">
           <div class="cmp-cell side">記錄動機設計</div>
           <div class="cmp-cell focus">受訪者：「如果記錄後沒有人看，不知道為什麼要記錄」</div>
-          <div class="cmp-cell">每次記錄後，讓使用者看到這份資訊的去向</div>
+          <div class="cmp-cell">開放編輯與修改紀錄，異常或更新會推播通知協作照顧者</div>
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- ===== A/B 測試 ===== -->
@@ -465,6 +472,40 @@
         scrolling="no"
         title="CareLink Vibe Coding 原型"
       ></iframe>
+    </div>
+
+    <h3 class="reveal" data-d="2" style="font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--ink);margin:36px 0 14px;">本輪迭代：三個假設</h3>
+    <div class="steps reveal" data-d="2">
+      <div class="step">
+        <div class="n">1</div>
+        <div>
+          <h4>AI 內容編輯與異動通知</h4>
+          <p class="line"><span class="lbl">問題假設：</span>使用者對 AI 自動生成的內容缺乏信任，純文字告知「這是 AI 生成」不足以建立可信度；資訊異動時若沒有即時通知，協作照顧者之間容易出現資訊斷軌。</p>
+          <p class="line"><span class="lbl">解決方案：</span>AI 摘要開放人為編輯並保留修改紀錄以強化可信度，異常或資訊更新時主動跳提醒通知給設定需知人（例如協作照顧者）。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <div>
+          <h4>生命徵象追蹤與歷史資料補登</h4>
+          <p class="line"><span class="lbl">問題假設：</span>照顧者僅憑日常觀察難以判讀個案健康狀態的變化趨勢，缺乏具體數據佐證；過往紙本或就醫診斷紀錄未被數位化，AI 分析缺乏歷史依據。</p>
+          <p class="line"><span class="lbl">解決方案：</span>加入血壓、血氧等生命徵象追蹤，透過「數字會說話」提升判讀依據；開放過往資料補登，並提供近 7 天／30 天／3 個月／自訂區間的 AI 統計與匯出功能，讓照顧者看見個案的康復趨勢。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <div>
+          <h4>圖表化健康摘要</h4>
+          <p class="line"><span class="lbl">問題假設：</span>照顧者的使用情境高壓、低餘裕，純文字摘要在忙碌或疲累時難以快速吸收判讀。</p>
+          <p class="line"><span class="lbl">解決方案：</span>將健康摘要改為圖表化呈現，讓使用者能在忙碌或疲累時更快速掌握個案狀態。</p>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" data-d="2" style="margin-top:20px;">
+      <p style="font-size:13px;color:var(--muted);margin:0 0 10px;">這輪也延伸了幾項優化：</p>
+      <ul class="fact-list">
+        <li>AI 語音記錄擴充為拍照、圖片、文字的複合式紀錄，例如拍攝檢查報告可自動辨識回診時間並匯入行事曆，讓照顧者提前安排陪同回診的人選；新增「就醫摘要」讓交接者快速掌握重點</li>
+      </ul>
     </div>
 
     <h3 class="reveal" data-d="2" style="font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--ink);margin:36px 0 14px;">AI 信任機制：給控制感比貼標籤有效</h3>
@@ -500,45 +541,47 @@
       <div class="note">照顧者的使用情境本來就是高壓、低餘裕，圖表不是加分項，是這個情境下的必要設計。</div>
     </div>
 
-    <h3 class="reveal" data-d="3" style="font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--ink);margin:44px 0 14px;">高分功能摘要（A/B 版本，平均 ≥ 9.0）</h3>
-    <div class="cmp-table reveal" data-d="3">
-      <div class="cmp-row head" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell focus">功能</div>
-        <div class="cmp-cell" style="text-align:center;">平均分</div>
+    <details class="kw-block reveal" data-d="3" style="margin-top:44px;">
+      <summary style="font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--ink);">高分功能摘要（A/B 版本，平均 ≥ 9.0）</summary>
+      <div class="cmp-table" style="margin-top:14px;">
+        <div class="cmp-row head" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell focus">功能</div>
+          <div class="cmp-cell" style="text-align:center;">平均分</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">減輕整理照護資訊負擔</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.75</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">保留修改紀錄後的信任程度</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.50</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">圖表快速理解長輩狀態</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.25</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">圖表元素整體幫助</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.25</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">疲累時圖表比文字更有幫助</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.00</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">願意推薦</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.00</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">整體滿意度</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.00</div>
+        </div>
+        <div class="cmp-row" style="grid-template-columns:1fr 100px;">
+          <div class="cmp-cell">付費意願</div>
+          <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.00</div>
+        </div>
       </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">減輕整理照護資訊負擔</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.75</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">保留修改紀錄後的信任程度</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.50</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">圖表快速理解長輩狀態</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.25</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">圖表元素整體幫助</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.25</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">疲累時圖表比文字更有幫助</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.00</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">願意推薦</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.00</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">整體滿意度</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.00</div>
-      </div>
-      <div class="cmp-row" style="grid-template-columns:1fr 100px;">
-        <div class="cmp-cell">付費意願</div>
-        <div class="cmp-cell" style="text-align:center;font-weight:700;color:var(--gold-deep);">9.00</div>
-      </div>
-    </div>
+    </details>
   </section>
 
   <!-- ===== 兩輪對比 ===== -->
@@ -591,7 +634,7 @@
       </div>
     </div>
     <div class="prose reveal" data-d="2" style="margin-top:24px;">
-      <p>整體滿意度和付費意願是最大的兩個躍升。照護溝通實用性小幅下滑 0.5 分，值得留意，可能是 A/B 版本介面複雜度增加，反而稍微影響了直觀感受。降低照護壓力兩輪都墊底，幾乎沒有移動，是下一輪最重要的設計缺口。付費意願這輪也出現了第一位願意支付 NT$500 以上月費的受訪者。</p>
+      <p>整體滿意度和付費意願是最大的兩個躍升。照護溝通實用性小幅下滑 0.5 分，值得留意，可能是 A/B 版本介面複雜度增加，反而稍微影響了直觀感受。降低照護壓力兩輪都墊底，幾乎沒有移動，是下一輪最重要的設計缺口。整體付費意願的躍升由多位受訪者的評分推動；這輪也出現 1 位受訪者具體表示願支付 NT$500 以上月費，是正向訊號，但這個價格帶目前只有一人，還不到能代表市場的規模。</p>
     </div>
   </section>
 
